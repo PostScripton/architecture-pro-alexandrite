@@ -1,6 +1,6 @@
 # Задание 3. Трейсинг
 
-Технический документ: `Архитектурное решение по трейсингу.md`
+Технический документ: [Архитектурное решение по трейсингу.md](Архитектурное%20решение%20по%20трейсингу.md)
 
 ## Архитектурное решение (задание 3)
 
@@ -27,10 +27,10 @@
 Два сервиса на Python/Flask с инструментированием OpenTelemetry, развёрнутые в minikube. При вызове service-a он обращается к service-b, и оба вызова попадают в один трейс в Jaeger.
 
 **Структура:**
-- `services/service-a/` - Flask-сервис, принимает GET /, вызывает service-b
-- `services/service-b/` - Flask-сервис, принимает GET /, возвращает ответ
-- `k8s/jaeger-instance.yaml` - Jaeger all-in-one deployment + service
-- `k8s/services.yaml` - deployments и services для service-a и service-b
+- [services/service-a/](services/service-a/) - Flask-сервис, принимает GET /, вызывает service-b
+- [services/service-b/](services/service-b/) - Flask-сервис, принимает GET /, возвращает ответ
+- [k8s/jaeger-instance.yaml](k8s/jaeger-instance.yaml) - Jaeger all-in-one deployment + service
+- [k8s/services.yaml](k8s/services.yaml) - deployments и services для service-a и service-b
 
 **Запуск:**
 
